@@ -1,0 +1,45 @@
+What is a data structure?
+    The shape of the bucket that you put stuff in
+    A different tool
+    Tools to solve problems
+    The organization of data
+    * An ordered way of organizing data 
+
+
+Linked Lists
+    They can be fast
+    similar to arrays but uses notes instead of indexes
+    they don't take up a continuous memory block
+        each "element" has the "address" to the NEXT item in the list
+
+    my_array (1, 2, 3, 4)
+    print(my_array[2])
+    here "my_array" is the address and you go to the memory slot address and look 3 blocks ahead for index 2
+
+    The nodes in a linked list are not stored strictly in order in blocks of memory.  
+    They are stored randomly and linked with memory locations(prev, and next), 
+    making modification time O(1).
+
+    each item in linked list basically has "address aka pointer of previous"/item/"pointer of next item"
+    beginning of list's node is called "head"
+        head node will be "null/item/next_item pointer
+    end of list would be "previous pointer/item/null"
+
+    time complexity examples
+                                    array       linked list(DLL)
+    append                          O(1)        O(1)  
+    print nth                       O(1)        O(n)
+    add to front                    O(n)        O(1)
+    del the front                   O(n)        O(1)
+    del mid(node known/unknown)     O(n)        O(1)/O(n)
+    find (linear search)            O(n)        O(n)
+    find (binary search)            O(log n)    O(n)
+
+    best to use linked list if you're changing items constantly
+        if you're manipulating a queue (first in first out) like a stock of milk...oldest at the front
+
+
+
+
+    
+
